@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:15:06 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 17:21:40 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 20:37:49 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,9 +89,9 @@ void	check_value(t_game *game)
 				game->coin++;
 			else if (game->map[i][j] == 'E')
 				game->exit++;
-			else if (game->map[i][j] != '0' || game->map[i][j] != '1')
+			else if (game->map[i][j] != '0' && game->map[i][j] != '1')
 			{
-				ft_printf("Error only character allowed in the map are, 0, 1, C, P, E.\n");
+				ft_printf("Error only character allowed in the map are 0, 1, C, P and E.\n");
 				free_all(game);
 				exit(EXIT_FAILURE);
 			}

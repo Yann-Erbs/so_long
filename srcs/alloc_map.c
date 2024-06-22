@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/16 01:22:14 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/21 16:10:49 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 20:31:48 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void remove_newline(char *line) {
     size_t len = ft_strlen(line);
     if (len > 0 && line[len - 1] == '\n') {
-        line[len - 1] = '\0';  // Remplacez '\n' par '\0'
+        line[len - 1] = '\0';  // Remplace \n par \0
     }
 }
 
