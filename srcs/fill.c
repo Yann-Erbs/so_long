@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:09:42 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 16:12:05 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 16:30:44 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	find_coin(t_game *game)
 
 	i = 0;
 	y = 0;
-	//game->co_coin = ft_calloc(game->coin, sizeof(t_co_coin));
+	game->co_coin = ft_calloc(game->coin, sizeof(t_co_coin));
 	if (!game->co_coin)
 	{
 		ft_printf("Error during memory allocation\n");

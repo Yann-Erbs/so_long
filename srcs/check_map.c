@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 14:44:15 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/21 16:16:32 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 16:40:57 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 void	find_path(t_game *game, int x, int y)
 {
 	if (game->map_width < x || y > game->map_height || game->map[y][x] == '1' || game->map[y][x] == 'V')
+	{
 		return ;
+	}
 	game->map[y][x] = 'V';
 	find_path(game, x + 1, y);
 	find_path(game, x, y + 1);

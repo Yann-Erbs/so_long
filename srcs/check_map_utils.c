@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:15:06 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/19 14:57:44 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 16:38:43 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	check_square(t_game *game)
 		}
 		i++;
 	}
+	game->map_width = ft_strlen(game->map[i - 1]);
 }
 
 void	check_wall(t_game *game)
