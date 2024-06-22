@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 14:44:15 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 16:40:57 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/22 17:11:29 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ void	check_path(t_game *game)
 
 void	check_map(t_game *game)
 {
+	check_value(game);
 	check_square(game);
 	check_wall(game);
-	check_value(game);
 	if (game->exit != 1 || game->player != 1 || !game->coin)
 	{
 		ft_printf("Map has to have only one player, only one exit and at minimum one coin.\n");
