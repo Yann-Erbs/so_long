@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/16 02:20:35 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/16 02:20:48 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/21 15:13:38 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int	fd_manager(char *av)
 	{
 		ft_printf("Error oppening file.\n");
 		exit(EXIT_FAILURE);
-	}	
+	}
 	return (fd);
 }

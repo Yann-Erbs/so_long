@@ -6,11 +6,18 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/16 01:22:14 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/16 04:35:34 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/21 16:10:49 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long.h"
+
+static void remove_newline(char *line) {
+    size_t len = ft_strlen(line);
+    if (len > 0 && line[len - 1] == '\n') {
+        line[len - 1] = '\0';  // Remplacez '\n' par '\0'
+    }
+}
 
 void	alloc_map(t_game *game, char **av)
 {
@@ -29,6 +36,7 @@ void	alloc_map(t_game *game, char **av)
 	line = get_next_line(fd);
 	while (line)
 	{
+		remove_newline(line); 
 		game->map[j] = line;
 		j++;
 		line = get_next_line(fd);

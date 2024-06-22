@@ -6,7 +6,7 @@
 #    By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 01:15:47 by yerbs             #+#    #+#              #
-#    Updated: 2024/06/16 02:21:41 by yerbs            ###   ########.fr        #
+#    Updated: 2024/06/21 16:10:05 by yerbs            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,10 @@ SRC =	srcs/main.c \
 		srcs/init.c \
 		srcs/print_map.c \
 		srcs/fd_manager.c \
+		srcs/check_map.c \
+		srcs/check_map_utils.c \
+		srcs/free.c \
+		srcs/fill.c \
 		get_next_line/get_next_line.c \
 		get_next_line/get_next_line_utils.c \
 		ft_printf/srcs/ft_printf.c \
