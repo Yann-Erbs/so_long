@@ -6,11 +6,11 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/16 01:22:14 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 20:31:48 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/25 13:05:06 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../../includes/so_long.h"
 
 static void remove_newline(char *line) {
     size_t len = ft_strlen(line);

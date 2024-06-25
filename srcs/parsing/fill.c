@@ -6,11 +6,11 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:09:42 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 17:14:23 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/25 13:03:31 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../../includes/so_long.h"
 
 void	find_player(t_game *game)
 {

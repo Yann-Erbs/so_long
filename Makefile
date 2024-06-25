@@ -6,20 +6,20 @@
 #    By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 01:15:47 by yerbs             #+#    #+#              #
-#    Updated: 2024/06/21 16:10:05 by yerbs            ###   ########.fr        #
+#    Updated: 2024/06/25 14:19:00 by yerbs            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC =	srcs/main.c \
-		srcs/get_map_size.c \
-		srcs/alloc_map.c \
-		srcs/init.c \
-		srcs/print_map.c \
-		srcs/fd_manager.c \
-		srcs/check_map.c \
-		srcs/check_map_utils.c \
-		srcs/free.c \
-		srcs/fill.c \
+		srcs/utils/free.c \
+		srcs/utils/print_map.c \
+		srcs/utils/alloc_map.c \
+		srcs/utils/fd_manager.c \
+		srcs/utils/get_map_size.c \
+		srcs/parsing/fill.c \
+		srcs/parsing/init.c \
+		srcs/parsing/check_map.c \
+		srcs/parsing/check_map_utils.c \
 		get_next_line/get_next_line.c \
 		get_next_line/get_next_line_utils.c \
 		ft_printf/srcs/ft_printf.c \

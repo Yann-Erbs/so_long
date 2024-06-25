@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fd_manager.c                                       :+:      :+:    :+:   */
+/*   print_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/16 02:20:35 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/21 15:13:38 by yerbs            ###   ########.fr       */
+/*   Created: 2024/06/16 01:31:57 by yerbs             #+#    #+#             */
+/*   Updated: 2024/06/25 13:05:22 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../../includes/so_long.h"
 
-int	fd_manager(char *av)
+void	print_map(t_game *game)
 {
-	int fd;
+	int	i;
 
-	fd = open(av, O_RDONLY);
-	if (fd == -1)
+	i = 0;
+	while (i < game->map_height)
 	{
-		ft_printf("Error oppening file.\n");
-		exit(EXIT_FAILURE);
+		ft_printf("%s\n", game->map[i++]);
 	}
-	return (fd);
 }

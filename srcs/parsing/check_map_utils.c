@@ -6,11 +6,11 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 14:15:06 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/22 20:37:49 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/25 13:03:22 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../../includes/so_long.h"
 
 void	check_square(t_game *game)
 {

@@ -6,7 +6,7 @@
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 13:20:28 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/21 16:09:16 by yerbs            ###   ########.fr       */
+/*   Updated: 2024/06/25 12:56:39 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ typedef struct s_co_coin
 typedef struct s_game
 {
 	char			**map;
+	char 			*name;
 	int				map_height;
 	int				map_width;
 	int				coin;

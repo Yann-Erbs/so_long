@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_map_size.c                                     :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yerbs <yerbs@student.42mulhouse.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/15 19:09:07 by yerbs             #+#    #+#             */
-/*   Updated: 2024/06/16 02:27:49 by yerbs            ###   ########.fr       */
+/*   Created: 2024/06/18 15:18:14 by yerbs             #+#    #+#             */
+/*   Updated: 2024/06/25 13:05:15 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../../includes/so_long.h"
 
-void	get_map_height(t_game *game, char **av)
+void	free_all(t_game *game)
 {
-    char    *line;
-	int		fd;
+	int	i;
 
-	fd = fd_manager(av[1]);
-	line = get_next_line(fd);
-    while (line)
-    {
-        game->map_height++;
-		free(line);
-		line = get_next_line(fd);
-	}
-	close(fd);
+	i = 0;
+	if (game->co_player)
+		free(game->co_player);
+	if (game->co_exit)
+		free(game->co_exit);
+	if (game->co_coin)
+		free(game->co_coin);
+	if (game->name)
+		free(game->name);
+	while (i < game->map_height)
+		free(game->map[i++]);
+	free(game->map);
+	free(game);
 }
